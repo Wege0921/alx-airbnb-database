@@ -13,12 +13,13 @@ ORDER BY
     total_bookings DESC;
 
 
--- 2. Rank properties based on the total number of bookings they have received
+-- 2. Rank properties based on the total number of bookings they have received using ROW_NUMBER
 SELECT 
     property_id,
     COUNT(*) AS total_bookings,
-    RANK() OVER (ORDER BY COUNT(*) DESC) AS property_rank
+    ROW_NUMBER() OVER (ORDER BY COUNT(*) DESC) AS property_rank
 FROM 
     bookings
 GROUP BY 
     property_id;
+
