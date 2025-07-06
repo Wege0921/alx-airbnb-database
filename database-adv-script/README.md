@@ -40,5 +40,24 @@ Practice writing both correlated and non-correlated SQL subqueries.
 
 ## Repository Structure
 
+# Aggregations and Window Functions – ALX Airbnb Database
+
+## Objective
+Practice using SQL aggregation functions and window functions to analyze booking data.
+
+## Files
+- `aggregations_and_window_functions.sql`: SQL script with aggregation and window function queries.
+- `README.md`: Explanation of the purpose and structure of the queries.
+
+## Queries Included
+
+1. **Aggregations using COUNT + GROUP BY**  
+   Retrieves the total number of bookings made by each user.
+
+2. **Window Function using RANK()**  
+   Ranks properties based on the total number of bookings they have received.
+
+## Repository Structure
+
 
 
