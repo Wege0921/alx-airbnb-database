@@ -21,3 +21,24 @@ To master SQL joins by writing complex queries using `INNER JOIN`, `LEFT JOIN`, 
 
 ## Repository Structure
 
+# Subqueries – ALX Airbnb Database
+
+## Objective
+Practice writing both correlated and non-correlated SQL subqueries.
+
+## Files
+- `subqueries.sql`: Contains SQL queries using subqueries.
+- `README.md`: Describes the purpose and structure of the queries.
+
+## Queries Included
+
+1. **Non-Correlated Subquery**  
+   Retrieves all properties where the average rating from reviews is greater than 4.0.
+
+2. **Correlated Subquery**  
+   Retrieves users who have made more than 3 bookings.
+
+## Repository Structure
+
+
+
