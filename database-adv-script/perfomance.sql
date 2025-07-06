@@ -1,7 +1,5 @@
--- Initial unoptimized query to retrieve all bookings with user, property, and payment details
+-- Initial unoptimized query to retrieve all bookings with related user, property, and payment details
 
--- BEFORE Optimization
-EXPLAIN ANALYZE
 SELECT
     b.id AS booking_id,
     u.name AS user_name,
@@ -13,6 +11,7 @@ FROM
 JOIN users u ON b.user_id = u.id
 JOIN properties p ON b.property_id = p.id
 JOIN payments pay ON b.id = pay.booking_id;
+
 
 
 -- AFTER Optimization: Assumes appropriate indexes exist
